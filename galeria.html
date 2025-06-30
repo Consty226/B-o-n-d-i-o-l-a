@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>galeria - Bondiola</title>
+</head>
+<body>
+    <header>
+        <h1>Bondiola</h1>
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tablas.html">Tablas nutricionales</a></li>
+                <li><a href="formulario.html">Formulario de Pedido</a></li>
+                <li><a href="galeria.html">Galeria de multimedia</a></li>
+                <li><a href="otrapaginapropia.html">Otra página</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Reproductor de audio 1 -->
+            <audio controls autoplay loop preload="auto">
+                <source src="audio/Audio1.ogg" type="audio/ogg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>Nombre del Audio: Audio 1 - Relaxing Amoladora Vibes</p>
+        </section>
+
+        <section>
+            <!-- Reproductor de audio 2 -->
+            <audio controls preload="metadata" autoplay loop>
+                <source src="audio/Audio2.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>Nombre del Audio: Audio 2 - Ritmo Chaqueño</p>
+        </section>
+
+        <section>
+            <!-- Reproductor de video 1 -->
+            <video controls autoplay loop width="320" preload="auto">
+                <source src="videos/video1.mp4" type="video/mp4">
+                <track src="subtitulos/video1.vtt" kind="subtitles" srclang="es" label="Español">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <p>Nombre del video: Video 1 - De la Naturaleza Brazileña</p>
+        </section>
+        
+        <section>
+            <!-- Reproductor de video 2 -->
+            <video controls width="480" preload="metadata">
+                <source src="videos/video2.mp4" type="video/mp4">
+                <track src="subtitulos/video2.vtt" kind="subtitles" srclang="es" label="Español">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <p>Nombre del video: Video 2 - Ciudad y Movimiento de Oliver</p>
+        </section>
+
+        <section>
+            <h3>Imagen adaptable según la pantalla</h3>
+            <picture>
+                <!-- Para pantallas grandes -->
+                <source media="(min-width: 1200px)" srcset="imagenes/imagen-grande.png">
+
+                <!-- Para pantallas medianas -->
+                <source media="(min-width: 768px)" srcset="imagenes/imagen-mediana.png">
+
+                <!-- Para pantallas pequeñas -->
+                <img src="imagenes/imagen-pequeña.png" alt="Imagen adaptable" width="100%">
+            </picture>
+
+            <h3>Galería adaptable</h3>
+            <div class="galeria">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="imagenes/galeria1-grande.png">
+                    <source media="(min-width: 768px)" srcset="imagenes/galeria1-mediana.png">
+                    <img src="imagenes/galeria1-pequeña.png" alt="Imagen 1 de la galería" width="100%">
+                </picture>
+            </div>
+        </section>
+
+        <section>
+            <h2>Multimedia</h2>
+            <article>
+                <h3>Video de YouTube</h3>
+                
+                <iframe 
+                    width="560" 
+                    height="315" 
+                    src="https://www.youtube.com/embed/ZDiltBbhnYI" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allowfullscreen 
+                    loading="lazy">
+                </iframe>
+            </article>
+
+            <article>
+                <h3>Mapa de Google Maps</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!4v1751141355592!6m8!1m7!1sOR7R_gNVBOlak1KjN6MYTQ!2m2!1d33.88719777941806!2d-117.7520341091968!3f23.31!4f0.9599999999999937!5f3.159579149217547"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+
+            <article>
+                <h3>Documento PDF</h3>
+                <iframe
+                    width="600" 
+                    height="400" 
+                    src="pdfs/Doc1.pdf" 
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Sitio creado por amantes de la bondiola | &copy; 2025</p>
+    </footer>
+</body>
+</html>
